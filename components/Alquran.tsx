@@ -18,7 +18,7 @@ const Alquran = () => {
         <h4 className='text-[#065F46] font-robotoslab font-semibold text-xl sm:text-2xl md:text-[30px] leading-snug md:leading-[36px]'>
           The Quran: A Timeless Divine Revelation
         </h4>
-        <div className='flex gap-2 text-black'>
+        <div className='flex gap-2 text-blac'>
           <button className="flex items-center gap-2 px-4 py-2 rounded-[4px] bg-white border border-gray-300 text-sm sm:text-base">
             <img src="/Icon.png" alt='Icon' className="w-4 h-4 sm:w-5 sm:h-5" />
             Filter
@@ -191,7 +191,7 @@ const Alquran = () => {
           <span>9</span>
           <span>10</span>
         </div>
-        <span className='flex items-center gap-2 text-[#0A0A0A] '>Next <ChevronRight /></span>
+        <span className='flex items-center gap-2 text-[#0A0A0A] opacity-50'>Next <ChevronRight /></span>
       </div>
 
     </div>
