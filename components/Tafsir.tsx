@@ -1,14 +1,19 @@
+"use client"
 import React from "react";
+import {useState} from "react"
 import { House } from "lucide-react";
 import Link from "next/link";
 
+
 const Tafsir = () => {
+  const [tafsir , settafsir] = useState("/ Tafsir")
+
   return (
     <div className="w-full max-w-[1440px] mx-auto">
 
       <div className="px-4 md:px-10 py-5 bg-[#065F46] text-white">
         <p className="flex gap-2 items-center text-sm">
-          <House size={16} /> / Tafsir
+          <House size={16} />  {tafsir}
         </p>
       </div>
 
@@ -62,14 +67,16 @@ const Tafsir = () => {
 
         
           <div className="flex flex-col gap-3 border border-[#065F46] rounded-2xl p-5">
-            <img src="/Qur_an.png" alt="Quran" className="max-w-[80px]" />
+           <Link href="/Alquran"><img src="/Qur_an.png" alt="Quran" className="max-w-[80px]" /></Link> 
             <h4 className="text-[#065F46] font-semibold text-xl">
               <Link href="/Alquran">Al-Quran</Link>
             </h4>
             <p className="text-[#0A0A0A] text-sm md:text-base opacity-70">
               Discover the miraculous preservation of the Quran, the linguistic perfection, and the historical evidence that proves its authenticity.
             </p>
-            <button className="mt-2 bg-[#065F46] text-white rounded py-2">
+            <button className="mt-2 bg-[#065F46] text-white rounded py-2" 
+          
+            >
               See More
             </button>
           </div>
@@ -81,8 +88,8 @@ const Tafsir = () => {
             <p className="text-[#0A0A0A] text-sm md:text-base opacity-70">
               Learn about the meticulous science of Hadith authentication and how scholars ensured the reliability of the Prophet’s words and actions.
             </p>
-            <button className="mt-2 bg-[#065F46] text-white rounded py-2">
-              See More
+            <button className="mt-2 bg-[#065F46] text-white rounded py-2 ">
+            See More
             </button>
           </div>
 

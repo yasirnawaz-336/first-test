@@ -6,14 +6,14 @@ const Alquran = () => {
   return (
     <div className="w-full px-4 md:px-10 lg:px-20 max-w-[1440px] mx-auto">
 
-      {/* Breadcrumb */}
+   
       <div className="py-4 text-center md:text-left">
         <p className="flex justify-center md:justify-start gap-2 items-center text-[#065F46] text-sm md:text-base">
           <House size={16} /> / Answering Criticism / Islamic Teaching / Al-Quran
         </p>
       </div>
 
-      {/* Header + Filter */}
+     
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 py-6 text-center md:text-left">
         <h4 className="text-[#065F46] font-robotoslab font-semibold text-2xl sm:text-3xl md:text-[30px] leading-snug max-w-full">
           The Quran: A Timeless Divine Revelation
@@ -55,7 +55,7 @@ const Alquran = () => {
       </div>
       <hr className="border-t-2 border-[#065F46] my-6"/>
 
-      {/* Article 2 */}
+    
       <div className="flex flex-col lg:flex-row justify-between gap-6 py-6">
         <div className="flex-1 flex flex-col gap-3">
           <h5 className="text-sm text-black">August 8, 2022 | Dr Yasir Qadhi | Yale University</h5>
@@ -80,7 +80,7 @@ const Alquran = () => {
       </div>
       <hr className="border-t-2 border-[#065F46] my-6"/>
 
-      {/* Article 3 */}
+   
       <div className="flex flex-col lg:flex-row justify-between gap-6 py-6">
         <div className="flex-1 flex flex-col gap-3">
           <h5 className="text-sm text-black">August 8, 2022 | Dr Yasir Qadhi | Yale University</h5>
@@ -129,7 +129,6 @@ const Alquran = () => {
       </div>
       <hr className="border-t-2 border-[#065F46] my-6"/>
 
-      {/* Article 2 */}
       <div className="flex flex-col lg:flex-row justify-between gap-6 py-6">
         <div className="flex-1 flex flex-col gap-3">
           <h5 className="text-sm text-black">August 8, 2022 | Dr Yasir Qadhi | Yale University</h5>
@@ -154,7 +153,6 @@ const Alquran = () => {
       </div>
       <hr className="border-t-2 border-[#065F46] my-6"/>
 
-      {/* Article 3 */}
       <div className="flex flex-col lg:flex-row justify-between gap-6 py-6">
         <div className="flex-1 flex flex-col gap-3">
           <h5 className="text-sm text-black">August 8, 2022 | Dr Yasir Qadhi | Yale University</h5>

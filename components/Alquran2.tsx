@@ -1,5 +1,6 @@
 import React from "react";
 import { House } from "lucide-react";
+import Link from "next/link";
 
 const Alqurhan2 = () => {
   return (
@@ -7,7 +8,7 @@ const Alqurhan2 = () => {
 
       <div className="px-4 md:px-10 py-5">
         <p className="flex flex-wrap gap-2 items-center text-[#065F46] text-sm">
-          <House size={16} /> / Answering Criticism / Islamic Teaching / Al-Quran /
+         <Link href="/"><House size={16} /> </Link> / Answering Criticism / Islamic Teaching / Al-Quran /
           <span className="opacity-70">
             The Preservation of the Quran: Insights from Classical and Modern Scholars
           </span>

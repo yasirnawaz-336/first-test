@@ -1,6 +1,7 @@
 import React from 'react'
 import { House, Star, MessageCircleMore, Hourglass, ChevronLeft, ChevronRight } from 'lucide-react'
 import { TfiLayoutGrid2, TfiMenu } from "react-icons/tfi";
+import Link from 'next/link';
 
 const Alquran = () => {
   return (
@@ -34,7 +35,7 @@ const Alquran = () => {
         <div className='flex flex-col gap-3 lg:max-w-[634px]'>
           <h5 className='font-poppins text-black text-sm sm:text-base'>June 12, 2021 | Ibn Kathir | Al-Azhar University</h5>
           <p className='text-[#065F46] font-robotoslab font-semibold text-xl sm:text-2xl lg:text-[24px] leading-snug'>
-            The Preservation of the Quran: Insights from Classical and Modern Scholars
+          <Link href="/Alquran2"> The Preservation of the Quran: Insights from Classical and Modern Scholars</Link> 
           </p>
           <p className='opacity-70 text-[#0A0A0A] text-base sm:text-[16px] leading-relaxed mb-4'>
             This study explores how the Quran has been preserved since its revelation over 1400 years ago. The work of renowned Islamic scholar Ibn Kathir provides deta...
@@ -84,7 +85,7 @@ const Alquran = () => {
         <div className='flex flex-col gap-3 lg:max-w-[634px]'>
           <h5 className='font-poppins text-black text-sm sm:text-base'>August 8, 2022 | Dr Yasir Qadhi | Yale University</h5>
           <p className='text-[#065F46] font-robotoslab font-semibold text-xl sm:text-2xl lg:text-[24px] leading-snug'>
-            The Preservation of the Quran: Insights from Classical and Modern Scholars
+           <Link href="/Alquran2">The Preservation of the Quran: Insights from Classical and Modern Scholars</Link> 
           </p>
           <p className='opacity-70 text-[#0A0A0A] text-base sm:text-[16px] leading-relaxed mb-4'>
             This study explores how the Quran has been preserved since its revelation over 1400 years ago. The work of renowned Islamic scholar Ibn Kathir provides deta...
@@ -134,7 +135,7 @@ const Alquran = () => {
         <div className='flex flex-col gap-3 lg:max-w-[634px]'>
           <h5 className='font-poppins text-black text-sm sm:text-base'>August 8, 2022 | Dr Yasir Qadhi | Yale University</h5>
           <p className='text-[#065F46] font-robotoslab font-semibold text-xl sm:text-2xl lg:text-[24px] leading-snug'>
-            The Preservation of the Quran: Insights from Classical and Modern Scholars
+           <Link href="/Alquran2">The Preservation of the Quran: Insights from Classical and Modern Scholars</Link> 
           </p>
           <p className='opacity-70 text-[#0A0A0A] text-base sm:text-[16px] leading-relaxed mb-4'>
             This study explores how the Quran has been preserved since its revelation over 1400 years ago. The work of renowned Islamic scholar Ibn Kathir provides deta...
