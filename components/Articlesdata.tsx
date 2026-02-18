@@ -1,0 +1,92 @@
+import { University } from "lucide-react";
+
+export const articles = [
+    {
+        id : 1,
+        date: "june 12, 2021",
+        author: "Ibn Khatir",
+        university: "Al-Azhar University",
+        title: "The Preservation of the Quran: Insights from Classical and Modern Scholars",
+        description: "This study explores how the Quran has been preserved since its revelation over 1400 years ago. The work of renowned Islamic scholar Ibn Kathir provides deta...",
+        image: "/beautiful.png",
+        rating: 4.8 ,
+        discussions: 134,
+        readtime: "8 min read",
+        verified: true,
+        link: "/Alquran2"
+    },
+
+    {
+        id: 2,
+        date:"August 8,2022",
+        author:"Dr Yasir Qadhi",
+        university:"Yale University",
+        title:"Scientific Approaches to the Preservation of the Quran",
+        description:"This article delves into how the Quran was recorded and compiled during the lifetime of Prophet Muhammad ﷺ and later standardized under Caliph Uthma...",
+        image:"/historical.png",
+        rating:"4.8",
+        discussions:"134 Discussions",
+        readtime:"8 min read",
+        verified:true,
+        link: "#"
+
+    },
+    {
+        id : 3,
+        date: "june 12, 2021",
+        author: "Ibn Khatir",
+        university: "Al-Azhar University",
+        title: "The Preservation of the Quran: Insights from Classical and Modern Scholars",
+        description: "This study explores how the Quran has been preserved since its revelation over 1400 years ago. The work of renowned Islamic scholar Ibn Kathir provides deta...",
+        image: "/beautiful.png",
+        rating: 4.8 ,
+        discussions: 134,
+        readtime: "8 min read",
+        verified: true,
+        link: "/Alquran2"
+    },
+    {
+        id: 4,
+        date:"August 8,2022",
+        author:"Dr Yasir Qadhi",
+        university:"Yale University",
+        title:"Scientific Approaches to the Preservation of the Quran",
+        description:"This article delves into how the Quran was recorded and compiled during the lifetime of Prophet Muhammad ﷺ and later standardized under Caliph Uthma...",
+        image:"/historical.png",
+        rating:"4.8",
+        discussions:"134 Discussions",
+        readtime:"8 min read",
+        verified:true,
+        link: "#"
+
+    },
+    {
+        id : 5,
+        date: "june 12, 2021",
+        author: "Ibn Khatir",
+        university: "Al-Azhar University",
+        title: "The Preservation of the Quran: Insights from Classical and Modern Scholars",
+        description: "This study explores how the Quran has been preserved since its revelation over 1400 years ago. The work of renowned Islamic scholar Ibn Kathir provides deta...",
+        image: "/beautiful.png",
+        rating: 4.8 ,
+        discussions: 134,
+        readtime: "8 min read",
+        verified: true,
+        link: "/Alquran2"
+    },
+    {
+        id: 6,
+        date:"August 8,2022",
+        author:"Dr Yasir Qadhi",
+        university:"Yale University",
+        title:"Scientific Approaches to the Preservation of the Quran",
+        description:"This article delves into how the Quran was recorded and compiled during the lifetime of Prophet Muhammad ﷺ and later standardized under Caliph Uthma...",
+        image:"/historical.png",
+        rating:"4.8",
+        discussions:"134 Discussions",
+        readtime:"8 min read",
+        verified:true,
+        link: "#"
+
+    },
+]
