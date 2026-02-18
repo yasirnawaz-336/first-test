@@ -1,11 +1,36 @@
 import React from "react";
-import { Star, MessageCircleMore, Hourglass } from "lucide-react";
+import { TfiLayoutGrid2, TfiMenu } from 'react-icons/tfi';
+import { House, Star, MessageCircleMore, Hourglass, ChevronLeft, ChevronRight } from 'lucide-react';
 import { articles } from "./Articlesdata";
 import Link from "next/link";
+
 
 const Alquran = () => {
   return (
     <div className="w-full max-w-[1440px] mx-auto px-4 md:px-10">
+      <div className="py-4 text-center md:text-left">
+        <p className="flex justify-center md:justify-start gap-2 items-center text-[#065F46] text-sm md:text-base">
+        <House size={16} /> / Answering Criticism / Islamic Teaching / Al-Quran
+        </p>
+      </div>
+
+     
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4 py-6 text-center md:text-left">
+        <h4 className="text-[#065F46] font-robotoslab font-semibold text-2xl sm:text-3xl md:text-[30px] leading-snug max-w-full">
+        The Quran: A Timeless Divine Revelation
+        </h4>
+
+        <div className="flex text-black items-center gap-4">
+          <button className="flex items-center gap-2 px-4 py-2 rounded border bg-white text-sm sm:text-base">
+            <img src="/Icon.png" alt="Icon" className="w-4 h-4 sm:w-5 sm:h-5"/>
+            Filter
+          </button>
+          <div className="flex gap-2 text-xl">
+            <TfiLayoutGrid2 />
+            <TfiMenu />
+          </div>
+        </div>
+      </div>
       {articles.map((article) => (
         <div key={article.id}>
          
@@ -42,6 +67,20 @@ const Alquran = () => {
           <hr className="border-t-2 border-[#065F46] my-6" />
         </div>
       ))}
+      
+      <div className="flex flex-wrap justify-between items-center gap-4 py-10 text-sm sm:text-base">
+        <span className="flex items-center gap-2 text-[#0A0A0A] opacity-50"><ChevronLeft /> Previous</span>
+        <div className="flex gap-2 text-black flex-wrap justify-center items-center">
+          <span className="bg-[#ECFDF5] px-3 py-1 rounded text-[#065F46]">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>...</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+        </div>
+        <span className="flex items-center gap-2 text-[#0A0A0A] ">Next <ChevronRight /></span>
+      </div>
     </div>
   );
 };
