@@ -46,7 +46,7 @@ const Navbar = () => {
           <p className="opacity-70">Contact Us</p>
         </div>
 
-        {/* Search */}
+       
         <div className="relative hidden sm:block w-full max-w-[264px] h-8">
           <Search
             size={16}
@@ -65,7 +65,7 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Mobile Menu Button */}
+      
         <button
           className="md:hidden text-white"
           onClick={() => setOpen(!open)}
@@ -74,16 +74,16 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
+ 
       {open && (
         <div className="md:hidden bg-[#065F46] text-white px-6 pb-4 space-y-4">
-          <p className="opacity-80">Home</p>
+      <p className="opacity-80">   <Link href="/">Home</Link> </p>
           <p className="opacity-80 flex items-center gap-1">Library <ChevronDown size={16} /></p>
           <p className="opacity-80">Ask a Scholar</p>
           <p className="opacity-80">About</p>
           <p className="opacity-80">Contact Us</p>
 
-          {/* Mobile Search */}
+        
           <div className="relative w-full h-8">
             <Search
               size={16}
@@ -93,6 +93,12 @@ const Navbar = () => {
               type="text"
               placeholder="Search..."
               className="w-full h-full rounded bg-white py-[6px] pr-2 pl-8 text-sm text-black"
+               onChange={(e) => 
+                setSearch(e.target.value)}
+                onKeyDown={(e) => {
+                  if(e.key === "Enter") 
+                    handleSearch()
+                }}
             />
           </div>
         </div>

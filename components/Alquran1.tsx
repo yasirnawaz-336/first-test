@@ -1,15 +1,16 @@
+"use client";
 import React from 'react';
-import { House, Star, MessageCircleMore, Hourglass, ChevronLeft, ChevronRight, University } from 'lucide-react';
+import { House, Star, MessageCircleMore, Hourglass, ChevronLeft, ChevronRight, } from 'lucide-react';
 import { TfiLayoutGrid2, TfiMenu } from 'react-icons/tfi';
-import {articles} from "./Articlesdata"
-import { UnifrakturMaguntia } from 'next/font/google';
+import {cards} from "./Carddata"
+import Link from 'next/link';
 const Alquran = () => {
   return (
     <div className="w-full px-4 md:px-10 lg:px-20 max-w-[1440px] mx-auto">
 
       <div className="py-4 text-center md:text-left">
         <p className="flex justify-center md:justify-start gap-2 items-center text-[#065F46] text-sm md:text-base">
-        <House size={16} /> / Answering Criticism / Islamic Teaching / Al-Quran
+        <Link href="/"><House size={16} /></Link> / Answering Criticism / Islamic Teaching / Al-Quran
         </p>
       </div>
 
@@ -31,35 +32,35 @@ const Alquran = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  {articles.map((article) => (
-    <div key={article.id} className="bg-white shadow-md rounded-lg p-4">
+  {cards.map((card) => (
+    <div key={card.id} className="bg-white shadow-md rounded-lg p-4">
       
       <img
-        src={article.image}
-        alt={article.title}
+        src={card.image}
+        alt={card.title}
         className="w-full h-[178px] object-cover rounded-md"
       />
 
       <p className="text-sm text-gray-500 mt-2">
-        {article.date} | {article.author} | {article.university}
+        {card.date} | {card.author} | {card.university}
       </p>
 
       <h1 className="text-lg font-semibold mt-2 text-[#065F46]">
-        {article.title}
+       <Link href={card.link}> {card.title}</Link>
       </h1>
 
       <p className="text-sm text-gray-600 mt-2">
-        {article.description}
+        {card.description}
       </p>
 
-      <div className="flex justify-between items-center mt-4 text-sm text-gray-500">
-        <div className="flex gap-4 items-center">
-          <span className="flex items-center gap-1"><Star size={16} />{article.rating}</span>
-          <span className="flex items-center gap-1"><MessageCircleMore size={16} />{article.discussions}</span>
-          <span className="flex items-center gap-1"><Hourglass size={16} />{article.readtime}</span>
+      <div className="flex justify-between items-center text-center mt-4 text-sm text-gray-500">
+        <div className="flex gap-3 items-center">
+          <span className="flex items-center gap-1"><Star size={16} />{card.rating}</span>
+          <span className="flex items-center gap-1"><MessageCircleMore size={16} />{card.discussions}</span>
+          <span className="flex items-center gap-1"><Hourglass size={16} />{card.readtime}</span>
         </div>
 
-        {article.verified && (
+        {card.verified && (
           <span className="px-2 py-1 bg-[#ECFDF5]  text-xs rounded-full">
             Verified
           </span>
