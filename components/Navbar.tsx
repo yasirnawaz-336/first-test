@@ -96,7 +96,7 @@ const Navbar = () => {
                onChange={(e) => 
                 setSearch(e.target.value)}
                 onKeyDown={(e) => {
-                  if(e.key === "Enter") 
+                  if(e.key === "Go") 
                     handleSearch()
                 }}
             />
